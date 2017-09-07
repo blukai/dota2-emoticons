@@ -13,7 +13,7 @@ emoticons = vdf\
 
 # Path to the tool that decompiles vtex_c into png
 # https://github.com/SteamDatabase/ValveResourceFormat
-decompiler = '/decompiler/Decompiler.exe -i %s -o %s'
+decompiler = './decompiler/Decompiler.exe'
 
 destination = './assets/emoticons'
 temp = './temp'
@@ -21,27 +21,36 @@ temp = './temp'
 if not os.path.isdir(temp):
     os.mkdir(temp)
 
+existing = os.listdir(destination)
+
+# get_name returns emote's filename without extension
+def get_name(png):
+    return png.replace('.png', '')
+
 print('> Extracting from vpk')
 for key, val in emoticons:
-    name_vtex = val['image_name'].replace('.', '_') + '.vtex_c'
-    name_png = val['image_name']
-    # Temporarily save vtex_c emoticon
-    pak['panorama/images/emoticons/' + name_vtex].save('%s/%s' % (temp, name_vtex))
+    name = get_name(val['image_name'])
+    if name + '.gif' in existing:
+        print('  - skipping existing "%s"' % name)
+        continue
+    pak['panorama/images/emoticons/' + name + '_png.vtex_c']\
+        .save('%s/%s' % (temp, name + '.vtex_c'))
 
 print('> Decompiling')
-os.system(os.getcwd() + decompiler % (temp, temp) + ' > /dev/null')
+os.system('%s -i %s -o %s > /dev/null' % (decompiler, temp, temp))
+
+decompiled = []
+for item in os.listdir(temp):
+    if item.endswith('.png'):
+        decompiled.append(item)
 
 print('> Cutting the sequences and generating gifs')
-total = len(emoticons)
-for key, val in emoticons:
-    name = val['image_name'].replace('.png', '')
-    name_png = name + '_png.png'
-
+for emote in decompiled:
+    name = get_name(emote)
     directory = ('%s/%s' % (temp, name))
     if not os.path.isdir(directory):
         os.mkdir(directory)
-
-    img = Image.open('%s/%s' % (temp, name_png))
+    img = Image.open('%s/%s.png' % (temp, name))
     # Frame count
     length = int(img.width / img.height)
     for i in range(length):
@@ -51,9 +60,8 @@ for key, val in emoticons:
 
     delay = int(val['ms_per_frame']) / 10
     os.system('convert -loop 0 -delay %d -alpha set -dispose previous %s/*.png %s/%s.gif' % (delay, directory, destination, name))
-    print('\t+ [%d/%d] %s.gif' % (i + 1, total, name))
+    print('  - generated %s.gif' % name)
 
 print('cleaning up..')
 os.rmdir(temp)
 print('Done!')
-

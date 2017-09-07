@@ -1,5 +1,6 @@
 import os
 import shutil
+import json
 import vpk
 import vdf
 from PIL import Image
@@ -8,32 +9,37 @@ abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
 os.chdir(dname)
 
+# Path to the bin that decompiles vtex_c into png
+# https://github.com/SteamDatabase/ValveResourceFormat
+decompiler = '../decompiler/Decompiler.exe'
+
 # Path to vpk, which contains all the emoticons
 # windows d:/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk
 # wsl     /mnt/d/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk
 pak = vpk.open('/mnt/d/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk')
-emoticons = vdf\
-    .loads(pak['scripts/emoticons.txt'].read().decode('utf-16le'))['emoticons']\
-    .items()
+emoticons = vdf.loads(pak['scripts/emoticons.txt'].read().decode('utf-16le'))['emoticons']
 
-# Path to the tool that decompiles vtex_c into png
-# https://github.com/SteamDatabase/ValveResourceFormat
-decompiler = '../decompiler/Decompiler.exe'
+destination = '../assets'
+destination_gif = destination + '/images/emoticons'
+destination_json = destination + '/json'
 
-destination = '../assets/emoticons'
+with open(destination_json + '/emoticons.json', 'w') as f:
+    f.write(json.dumps(emoticons, indent=4))
+print('> Emoticons data saved in %s' % destination_json)
+
 temp = '../temp'
 
 if not os.path.isdir(temp):
     os.mkdir(temp)
 
-existing = os.listdir(destination)
+existing = os.listdir(destination_gif)
 
 # get_name returns emote's filename without extension
 def get_name(png):
     return png.replace('.png', '')
 
 print('> Extracting from vpk')
-for key, val in emoticons:
+for key, val in emoticons.items():
     name = get_name(val['image_name'])
     if name + '.gif' in existing:
         print('  - skipping existing "%s"' % name)
@@ -64,7 +70,7 @@ for emote in decompiled:
             .save('%s/%02d.png' % (directory, i))
 
     delay = int(val['ms_per_frame']) / 10
-    os.system('convert -loop 0 -delay %d -alpha set -dispose previous %s/*.png %s/%s.gif' % (delay, directory, destination, name))
+    os.system('convert -loop 0 -delay %d -alpha set -dispose previous %s/*.png %s/%s.gif' % (delay, directory, destination_gif, name))
     print('  - generated %s.gif' % name)
 
 print('> Cleaning up')

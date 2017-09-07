@@ -1,7 +1,12 @@
 import os
+import shutil
 import vpk
 import vdf
 from PIL import Image
+
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 
 # Path to vpk, which contains all the emoticons
 # windows d:/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk
@@ -13,10 +18,10 @@ emoticons = vdf\
 
 # Path to the tool that decompiles vtex_c into png
 # https://github.com/SteamDatabase/ValveResourceFormat
-decompiler = './decompiler/Decompiler.exe'
+decompiler = '../decompiler/Decompiler.exe'
 
-destination = './assets/emoticons'
-temp = './temp'
+destination = '../assets/emoticons'
+temp = '../temp'
 
 if not os.path.isdir(temp):
     os.mkdir(temp)
@@ -62,6 +67,6 @@ for emote in decompiled:
     os.system('convert -loop 0 -delay %d -alpha set -dispose previous %s/*.png %s/%s.gif' % (delay, directory, destination, name))
     print('  - generated %s.gif' % name)
 
-print('cleaning up..')
-os.rmdir(temp)
-print('Done!')
+print('> Cleaning up')
+shutil.rmtree(temp)
+print('> Done!')

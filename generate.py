@@ -5,13 +5,12 @@ import vpk
 import vdf
 from PIL import Image
 
-abspath = os.path.abspath(__file__)
-dname = os.path.dirname(abspath)
-os.chdir(dname)
-
 # Path to the bin that decompiles vtex_c into png
 # https://github.com/SteamDatabase/ValveResourceFormat
-decompiler = '../decompiler/Decompiler.exe'
+decompiler = './decompiler/Decompiler.exe'
+
+destination = './resources'
+temp = './temp'
 
 # Path to vpk, which contains all the emoticons
 # windows d:/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk
@@ -19,15 +18,12 @@ decompiler = '../decompiler/Decompiler.exe'
 pak = vpk.open('/mnt/d/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk')
 emoticons = vdf.loads(pak['scripts/emoticons.txt'].read().decode('utf-16le'))['emoticons']
 
-destination = '../assets'
 destination_gif = destination + '/images/emoticons'
 destination_json = destination + '/json'
 
 with open(destination_json + '/emoticons.json', 'w') as f:
     f.write(json.dumps(emoticons, indent=4))
 print('> Emoticons data saved in %s' % destination_json)
-
-temp = '../temp'
 
 if not os.path.isdir(temp):
     os.mkdir(temp)

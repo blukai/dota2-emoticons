@@ -1,6 +1,7 @@
 import os
 import shutil
 import json
+from collections import OrderedDict
 import vpk
 import vdf
 from PIL import Image
@@ -16,7 +17,7 @@ temp = './temp'
 # windows d:/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk
 # wsl     /mnt/d/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk
 pak = vpk.open('/mnt/d/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk')
-emoticons = vdf.loads(pak['scripts/emoticons.txt'].read().decode('utf-16le'))['emoticons']
+emoticons = vdf.loads(pak['scripts/emoticons.txt'].read().decode('utf-16le'), mapper=OrderedDict)['emoticons']
 
 destination_gif = destination + '/images/emoticons'
 destination_json = destination + '/json'
@@ -34,14 +35,20 @@ existing = os.listdir(destination_gif)
 def get_name(png):
     return png.replace('.png', '')
 
-print('> Extracting from vpk')
+print('> Extracting from vpk and generating char data')
+charname = {}
 for key, val in emoticons.items():
     name = get_name(val['image_name'])
+    charname[chr(0xE000 + int(key))] = name
     if name + '.gif' in existing:
         print('  - skipping existing "%s"' % name)
         continue
     pak['panorama/images/emoticons/' + name + '_png.vtex_c']\
         .save('%s/%s' % (temp, name + '.vtex_c'))
+
+with open(destination_json + '/charname.json', 'w') as f:
+    f.write(json.dumps(charname, indent=4))
+print('> Data `char:name` saved in %s' % destination_json)
 
 print('> Decompiling')
 os.system('%s -i %s -o %s > /dev/null' % (decompiler, temp, temp))

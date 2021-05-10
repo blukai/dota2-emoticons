@@ -1456,22 +1456,22 @@
         "quality": "0"
     },
     "1001": {
-        "image_name": "team_eg_silver.png",
+        "image_name": "team_alliance.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "39",
-        "quality": "1"
+        "team_id": "111474",
+        "quality": "0"
     },
     "1002": {
-        "image_name": "team_eg_gold.png",
+        "image_name": "team_keen.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "39",
-        "quality": "2"
+        "team_id": "2626685",
+        "quality": "0"
     },
     "1003": {
         "image_name": "team_dc.png",
@@ -1483,22 +1483,22 @@
         "quality": "0"
     },
     "1004": {
-        "image_name": "team_dc_silver.png",
+        "image_name": "team_nip.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "2512249",
-        "quality": "1"
+        "team_id": "6214973",
+        "quality": "0"
     },
     "1005": {
-        "image_name": "team_dc_gold.png",
+        "image_name": "team_mineski.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "2512249",
-        "quality": "2"
+        "team_id": "543897",
+        "quality": "0"
     },
     "1006": {
         "image_name": "team_ehome.png",
@@ -1510,22 +1510,22 @@
         "quality": "0"
     },
     "1007": {
-        "image_name": "team_ehome_silver.png",
+        "image_name": "team_chaos.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "4",
-        "quality": "1"
+        "team_id": "7203342",
+        "quality": "0"
     },
     "1008": {
-        "image_name": "team_ehome_gold.png",
+        "image_name": "team_royal.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "4",
-        "quality": "2"
+        "team_id": "6209804",
+        "quality": "0"
     },
     "1009": {
         "image_name": "team_exe.png",
@@ -1537,22 +1537,22 @@
         "quality": "0"
     },
     "1010": {
-        "image_name": "team_exe_silver.png",
+        "image_name": "team_nb.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "2581813",
-        "quality": "1"
+        "team_id": "6214538",
+        "quality": "0"
     },
     "1011": {
-        "image_name": "team_exe_gold.png",
+        "image_name": "team_navi.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "2581813",
-        "quality": "2"
+        "team_id": "36",
+        "quality": "0"
     },
     "1012": {
         "image_name": "team_mvp.png",
@@ -1564,13 +1564,13 @@
         "quality": "0"
     },
     "1013": {
-        "image_name": "team_mvp_silver.png",
+        "image_name": "team_vici.png",
         "ms_per_frame": "100",
         "aliases": {
             "0": "pro_team"
         },
-        "team_id": "1148284",
-        "quality": "1"
+        "team_id": "726228",
+        "quality": "0"
     },
     "1014": {
         "image_name": "team_mvp_silver.png",
@@ -2120,5 +2120,543 @@
         },
         "team_id": "46",
         "quality": "2"
+    },
+    "201": {
+        "image_name": "brow.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "brow"
+        }
+    },
+    "202": {
+        "image_name": "dealwithit.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "dealwithit"
+        }
+    },
+    "203": {
+        "image_name": "four.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "four"
+        }
+    },
+    "204": {
+        "image_name": "ggzeus.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "ggzeus"
+        }
+    },
+    "205": {
+        "image_name": "hahano.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "hahano"
+        }
+    },
+    "206": {
+        "image_name": "nuh_uh.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "nuh_uh"
+        }
+    },
+    "207": {
+        "image_name": "snicker.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "snicker"
+        }
+    },
+    "208": {
+        "image_name": "welluhh.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "welluhh"
+        }
+    },
+    "209": {
+        "image_name": "wplina.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "wplina"
+        }
+    },
+    "210": {
+        "image_name": "pudge_arcana_01.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pudgesteal"
+        }
+    },
+    "211": {
+        "image_name": "pudge_arcana_02.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pudgestop"
+        }
+    },
+    "212": {
+        "image_name": "aegis2018.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "aegis_2018"
+        }
+    },
+    "213": {
+        "image_name": "underhollow_emote_1.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "under_win"
+        }
+    },
+    "214": {
+        "image_name": "underhollow_emote_5.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "under_champ"
+        }
+    },
+    "215": {
+        "image_name": "underhollow_emote_10.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "under_king"
+        }
+    },
+    "216": {
+        "image_name": "frostivus_2018.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "frostivus_2018"
+        }
+    },
+    "217": {
+        "image_name": "magus_cypher.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "magus_cypher"
+        }
+    },
+    "218": {
+        "image_name": "aegis2019.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "aegis_2019"
+        }
+    },
+    "219": {
+        "image_name": "morokai_woof.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "morokai_woof"
+        }
+    },
+    "220": {
+        "image_name": "cny_rat.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "cny_rat"
+        }
+    },
+    "221": {
+        "image_name": "doot.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "doot"
+        }
+    },
+    "222": {
+        "image_name": "eyebrows.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "eyebrows"
+        }
+    },
+    "223": {
+        "image_name": "glare.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "glare"
+        }
+    },
+    "224": {
+        "image_name": "grindteeth.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "grindteeth"
+        }
+    },
+    "225": {
+        "image_name": "midas.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "midas"
+        }
+    },
+    "226": {
+        "image_name": "puckchamp.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "puckchamp"
+        }
+    },
+    "227": {
+        "image_name": "skynervous.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "skynervous"
+        }
+    },
+    "228": {
+        "image_name": "tide_drink.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "tide_drink"
+        }
+    },
+    "229": {
+        "image_name": "oracleburn.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "oracleburn"
+        }
+    },
+    "230": {
+        "image_name": "mortimer_tongue.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "mortimer_tongue"
+        }
+    },
+    "231": {
+        "image_name": "iostress.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "iostress"
+        }
+    },
+    "232": {
+        "image_name": "leisure_lion.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "leisure_lion"
+        }
+    },
+    "233": {
+        "image_name": "creepdance.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "creepdance"
+        }
+    },
+    "234": {
+        "image_name": "cm_wig.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "cm_wig"
+        }
+    },
+    "235": {
+        "image_name": "techywheeze.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "techywheeze"
+        }
+    },
+    "236": {
+        "image_name": "icefrog_giggle.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "icefrog_giggle"
+        }
+    },
+    "237": {
+        "image_name": "high_five.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "high_five"
+        }
+    },
+    "238": {
+        "image_name": "guildbanner.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "guildbanner"
+        }
+    },
+    "239": {
+        "image_name": "dazzle_shrug.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "dazzle_shrug"
+        }
+    },
+    "240": {
+        "image_name": "aegis2020.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "aegis_2020"
+        }
+    },
+    "241": {
+        "image_name": "aghs_scepter.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "scepter"
+        }
+    },
+    "242": {
+        "image_name": "big_brain.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "big_brain"
+        }
+    },
+    "243": {
+        "image_name": "chew.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "chew"
+        }
+    },
+    "244": {
+        "image_name": "creep_complain.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "creep_complain"
+        }
+    },
+    "245": {
+        "image_name": "doom_guy.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "doom_rip"
+        }
+    },
+    "246": {
+        "image_name": "giff_diretide.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "giff_diretide"
+        }
+    },
+    "247": {
+        "image_name": "in_the_bag.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "in_the_bag"
+        }
+    },
+    "248": {
+        "image_name": "luckycat.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "lucky_cat"
+        }
+    },
+    "249": {
+        "image_name": "pugna_sip.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pugna_sip"
+        }
+    },
+    "250": {
+        "image_name": "unlucky_cat.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "unlucky_cat"
+        }
+    },
+    "251": {
+        "image_name": "pump_mad.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pump_mad"
+        }
+    },
+    "252": {
+        "image_name": "pump_sad.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pump_sad"
+        }
+    },
+    "253": {
+        "image_name": "pump_glad.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pump_glad"
+        }
+    },
+    "254": {
+        "image_name": "omgomni.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "omgomni"
+        }
+    },
+    "255": {
+        "image_name": "diredance.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "diredance"
+        }
+    },
+    "256": {
+        "image_name": "swiz.png",
+        "ms_per_frame": "200",
+        "aliases": {
+            "0": "swiz"
+        }
+    },
+    "257": {
+        "image_name": "wiz_wow.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "wiz_wow"
+        }
+    },
+    "258": {
+        "image_name": "wiz_bringit.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "wiz_bringit"
+        }
+    },
+    "259": {
+        "image_name": "wiz_glhf.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "wiz_glhf"
+        }
+    },
+    "260": {
+        "image_name": "wiz_help.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "wiz_help"
+        }
+    },
+    "261": {
+        "image_name": "wiz_wat.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "wiz_wat"
+        }
+    },
+    "262": {
+        "image_name": "water_rune.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "water_rune"
+        }
+    },
+    "10001": {
+        "image_name": "team_secret.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pro_team"
+        },
+        "team_id": "1838315",
+        "quality": "0"
+    },
+    "10002": {
+        "image_name": "team_hellraisers.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pro_team"
+        },
+        "team_id": "1846548",
+        "quality": "0"
+    },
+    "10003": {
+        "image_name": "team_empire.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "pro_team"
+        },
+        "team_id": "46",
+        "quality": "0"
+    },
+    "2000": {
+        "image_name": "ranked_icons_emoticon_0.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "uncalibrated"
+        }
+    },
+    "2001": {
+        "image_name": "ranked_icons_emoticon_1.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "herald"
+        }
+    },
+    "2002": {
+        "image_name": "ranked_icons_emoticon_2.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "guardian"
+        }
+    },
+    "2003": {
+        "image_name": "ranked_icons_emoticon_3.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "crusader"
+        }
+    },
+    "2004": {
+        "image_name": "ranked_icons_emoticon_4.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "archon"
+        }
+    },
+    "2005": {
+        "image_name": "ranked_icons_emoticon_5.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "legend"
+        }
+    },
+    "2006": {
+        "image_name": "ranked_icons_emoticon_6.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "ancient"
+        }
+    },
+    "2007": {
+        "image_name": "ranked_icons_emoticon_7.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "divine"
+        }
+    },
+    "2008": {
+        "image_name": "ranked_icons_emoticon_8.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "immortal"
+        }
+    },
+    "2009": {
+        "image_name": "ranked_icons_emoticon_9.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "top1000"
+        }
+    },
+    "2010": {
+        "image_name": "ranked_icons_emoticon_10.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "top100"
+        }
     }
 }

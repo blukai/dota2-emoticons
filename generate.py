@@ -5,25 +5,39 @@ from collections import OrderedDict
 import vpk
 import vdf
 from PIL import Image
+import sys
 
-# Path to the bin that decompiles vtex_c into png
+# decompiler turns vtex_c into png
 # https://github.com/SteamDatabase/ValveResourceFormat
-decompiler = './decompiler/Decompiler.exe'
+decompiler = ''
+# https://docs.python.org/3/library/sys.html#sys.platform
+if sys.platform == 'darwin':
+    decompiler = './decompiler-osx-x64/Decompiler'
+elif sys.platform == 'linux':
+    decompiler = './decompiler-linux-x64/Decompiler'
+elif sys.platform == 'win32':
+    decompiler = './decompiler/Decompiler.exe'
+else:
+    sys.exit('unsupported platform')
+
+if len(sys.argv) != 2:
+    sys.exit('usage: python3 generate.py <path-to-dota>')
 
 destination = './resources'
 temp = './temp'
 
-# Path to vpk, which contains all the emoticons
-# windows d:/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk
-# wsl     /mnt/d/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk
-pak = vpk.open('/mnt/d/steam/SteamApps/common/dota 2 beta/game/dota/pak01_dir.vpk')
+pak = vpk.open(sys.argv[1] + '/game/dota/pak01_dir.vpk')
 emoticons = vdf.loads(pak['scripts/emoticons.txt'].read().decode('utf-16le'), mapper=OrderedDict)['emoticons']
 
 destination_gif = destination + '/images/emoticons'
 destination_json = destination + '/json'
 
-with open(destination_json + '/emoticons.json', 'w') as f:
-    f.write(json.dumps(emoticons, indent=4))
+with open(destination_json + '/emoticons.json', 'r+') as f:
+    existing_emoticons = json.load(f)
+    # merge existing and new emoticons
+    emoticons = dict(list(existing_emoticons.items()) + list(emoticons.items()))
+    f.seek(0)
+    f.write(json.dumps(dict(list(existing_emoticons.items()) + list(emoticons.items())), indent=4))
 print('> Emoticons data saved in %s' % destination_json)
 
 if not os.path.isdir(temp):
@@ -41,7 +55,7 @@ for key, val in emoticons.items():
     name = get_name(val['image_name'])
     charname[chr(0xE000 + int(key))] = name
     if name + '.gif' in existing:
-        print('  - skipping existing "%s"' % name)
+        print('  - skip existing "%s"' % name)
         continue
     pak['panorama/images/emoticons/' + name + '_png.vtex_c']\
         .save('%s/%s' % (temp, name + '.vtex_c'))
@@ -73,6 +87,7 @@ for emote in decompiled:
             .save('%s/%02d.png' % (directory, i))
 
     delay = int(val['ms_per_frame']) / 10
+    # combines the sequence images into a gif using imagemagick
     os.system('convert -loop 0 -delay %d -alpha set -dispose previous %s/*.png %s/%s.gif' % (delay, directory, destination_gif, name))
     print('  - generated %s.gif' % name)
 

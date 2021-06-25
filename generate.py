@@ -57,8 +57,11 @@ for key, val in emoticons.items():
     if name + '.gif' in existing:
         print('  - skip existing "%s"' % name)
         continue
-    pak['panorama/images/emoticons/' + name + '_png.vtex_c']\
-        .save('%s/%s' % (temp, name + '.vtex_c'))
+    try:
+        pak['panorama/images/emoticons/' + name + '_png.vtex_c']\
+            .save('%s/%s' % (temp, name + '.vtex_c'))
+    except:
+        print('  - could not extract "%s": %s' % (name, sys.exc_info()[0]))
 
 with open(destination_json + '/charname.json', 'w') as f:
     f.write(json.dumps(charname, indent=4))

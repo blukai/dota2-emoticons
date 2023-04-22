@@ -2896,5 +2896,274 @@
         "aliases": {
             "0": "whoahahah"
         }
+    },
+    "297": {
+        "image_name": "predict_win.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "ti10_compendium"
+        }
+    },
+    "298": {
+        "image_name": "agh2_awooga.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "aghawooga"
+        }
+    },
+    "299": {
+        "image_name": "agh2_awwghanim.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "awwghanim"
+        }
+    },
+    "300": {
+        "image_name": "agh2_lets_fraghing_go.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "fraghanim"
+        }
+    },
+    "301": {
+        "image_name": "agh2_poghanim.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "poghanim"
+        }
+    },
+    "302": {
+        "image_name": "agh2_smughanim.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "smughanim"
+        }
+    },
+    "303": {
+        "image_name": "agh2_swaghanim.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "swaghanim"
+        }
+    },
+    "305": {
+        "image_name": "come_here.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "come_here"
+        }
+    },
+    "315": {
+        "image_name": "giggle.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "giggle"
+        }
+    },
+    "316": {
+        "image_name": "hot_cocoa.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "hot_cocoa"
+        }
+    },
+    "318": {
+        "image_name": "marci_omnom.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "marci_omnom"
+        }
+    },
+    "319": {
+        "image_name": "not_like_this.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "not_like_this"
+        }
+    },
+    "321": {
+        "image_name": "smoked_ya.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "smoked_ya"
+        }
+    },
+    "323": {
+        "image_name": "power_runes.png",
+        "ms_per_frame": "200",
+        "aliases": {
+            "0": "power_runes"
+        }
+    },
+    "324": {
+        "image_name": "bucket.png",
+        "ms_per_frame": "200",
+        "aliases": {
+            "0": "bucket"
+        }
+    },
+    "325": {
+        "image_name": "itsatrap.png",
+        "ms_per_frame": "200",
+        "aliases": {
+            "0": "itsatrap"
+        }
+    },
+    "326": {
+        "image_name": "itsfromprimal.png",
+        "ms_per_frame": "200",
+        "aliases": {
+            "0": "itsfromprimal"
+        }
+    },
+    "327": {
+        "image_name": "flamescepter.png",
+        "ms_per_frame": "200",
+        "aliases": {
+            "0": "flamescepter"
+        }
+    },
+    "328": {
+        "image_name": "apexmage.png",
+        "ms_per_frame": "200",
+        "aliases": {
+            "0": "apexmage"
+        }
+    },
+    "329": {
+        "image_name": "sagan_sad.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "sagan_sad"
+        }
+    },
+    "330": {
+        "image_name": "flaming_mad.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "flaming_mad"
+        }
+    },
+    "331": {
+        "image_name": "shut_up.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "shut_up"
+        }
+    },
+    "332": {
+        "image_name": "wait_for_it.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "wait_for_it"
+        }
+    },
+    "333": {
+        "image_name": "surprised_meepo.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "surprised_meepo"
+        }
+    },
+    "334": {
+        "image_name": "stupid_bruiser.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "stupid_bruiser"
+        }
+    },
+    "335": {
+        "image_name": "snowballing.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "snowballing"
+        }
+    },
+    "336": {
+        "image_name": "smugstroke.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "smugstroke"
+        }
+    },
+    "337": {
+        "image_name": "shivers.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "shivers"
+        }
+    },
+    "338": {
+        "image_name": "hungry_hellbear.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "hungry_hellbear"
+        }
+    },
+    "339": {
+        "image_name": "furious.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "furious"
+        }
+    },
+    "340": {
+        "image_name": "eyebrow.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "eyebrow"
+        }
+    },
+    "341": {
+        "image_name": "closecall.png",
+        "ms_per_frame": "100",
+        "default_frame": "1",
+        "aliases": {
+            "0": "closecall"
+        }
+    },
+    "342": {
+        "image_name": "aegis_2022.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "aegis_2022"
+        }
+    },
+    "343": {
+        "image_name": "shield_rune.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "shield_rune"
+        }
+    },
+    "344": {
+        "image_name": "xp_rune.png",
+        "ms_per_frame": "100",
+        "aliases": {
+            "0": "xp_rune"
+        }
     }
 }

@@ -12,11 +12,11 @@ import sys
 decompiler = ''
 # https://docs.python.org/3/library/sys.html#sys.platform
 if sys.platform == 'darwin':
-    decompiler = './decompiler-osx-x64/Decompiler'
+    decompiler = './Decompiler-osx-x64/Decompiler'
 elif sys.platform == 'linux':
-    decompiler = './decompiler-linux-x64/Decompiler'
+    decompiler = './Decompiler-linux-x64/Decompiler'
 elif sys.platform == 'win32':
-    decompiler = './decompiler/Decompiler.exe'
+    decompiler = './Decompiler-windows-x64/Decompiler.exe'
 else:
     sys.exit('unsupported platform')
 
